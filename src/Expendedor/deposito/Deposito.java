@@ -13,7 +13,7 @@ public class Deposito<T> {
     }
 
     public T get(){ //Método para retirar el objeto
-        if (array.size() == 0){return null;} //Podemos aprovechar esto para hacer el throw a la excepción en expendedor
+        if (array.isEmpty()){return null;} //Podemos aprovechar esto para hacer el throw a la excepción en expendedor
         else{return array.removeFirst();} //Quita el primer elemento
     }
 

@@ -1,4 +1,4 @@
 package Expendedor.excepciones;
 
-public class NoHayProductoException {
+public class NoHayProductoException extends Exception {
 }

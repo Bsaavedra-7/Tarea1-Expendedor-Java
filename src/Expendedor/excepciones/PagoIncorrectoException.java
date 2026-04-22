@@ -1,4 +1,4 @@
 package Expendedor.excepciones;
 
-public class PagoIncorrectoException {
+public class PagoIncorrectoException extends Exception {
 }

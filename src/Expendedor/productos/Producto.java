@@ -1,5 +1,5 @@
 package Expendedor.productos;
 
-abstract class Producto {
+public abstract class Producto {
     public abstract String consumir();
 }

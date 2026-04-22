@@ -7,6 +7,7 @@ import Expendedor.deposito.*;
 
 public class Expendedor {
     private int cantProducto; //Variable a utilizar para rellenar los depósitos
+    private Deposito<Moneda>
     private Deposito<Producto> dCocaCola;
     private Deposito<Producto> dFanta;  //Declaramos los depósitos
     private Deposito<Producto> dSprite;
@@ -32,5 +33,7 @@ public class Expendedor {
             dSuper8.add(new Super8());
         }
     }
+
+
 
 }

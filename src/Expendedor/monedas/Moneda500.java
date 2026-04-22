@@ -1,7 +1,7 @@
 package Expendedor.monedas;
 
 
-class Moneda500 extends Moneda{
+public class Moneda500 extends Moneda{
 
     public Moneda500(){
         super();

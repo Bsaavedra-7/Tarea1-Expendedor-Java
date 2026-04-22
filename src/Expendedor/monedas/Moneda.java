@@ -1,7 +1,7 @@
 package Expendedor.monedas;
 
 
-abstract class Moneda{
+public abstract class Moneda{
 
     public Moneda(){
     }

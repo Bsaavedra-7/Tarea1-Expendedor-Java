@@ -1,8 +1,14 @@
 package Expendedor.productos;
 
-public class Fanta extends Bebida{
+public class Fanta extends Bebida {
+
     @Override
     public String beber() {
-        return "fanta";
+        return "gluglu";
+    }
+
+    @Override
+    public String getNombre() {
+        return "Fanta";
     }
 }

@@ -1,8 +1,14 @@
 package Expendedor.productos;
 
 public class Super8 extends Dulce {
+
     @Override
     public String comer() {
-        return "super8";
+        return "ñam ñam";
+    }
+
+    @Override
+    public String getNombre() {
+        return "Super8";
     }
 }

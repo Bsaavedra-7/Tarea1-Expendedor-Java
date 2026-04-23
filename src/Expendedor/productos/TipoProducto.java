@@ -1,9 +1,9 @@
 package Expendedor.productos;
 
 public enum TipoProducto{
-    COCA_COLA(1, 1500),
-    FANTA(2, 1500),
-    SPRITE(3, 1500), //Definimos las constantes
+    COCA_COLA(1, 500),
+    FANTA(2, 500),
+    SPRITE(3, 500), //Definimos las constantes
     SNICKERS(4, 500),
     SUPER8(5, 500);
 

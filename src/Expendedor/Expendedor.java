@@ -75,4 +75,8 @@ public class Expendedor {
         return producto; //Si llegó hasta aquí, es por que todo salió bien y puede retornar el producto
     }
 
+    public Moneda getVuelto() {
+        return dVuelto.get();
+    }
+
 }

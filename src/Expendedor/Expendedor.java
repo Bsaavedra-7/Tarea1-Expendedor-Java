@@ -53,7 +53,7 @@ public class Expendedor {
         }
     }
 
-    private Producto comprarProducto(Moneda moneda, TipoProducto tipo)
+    public Producto comprarProducto(Moneda moneda, TipoProducto tipo)
         throws NoHayProductoException, PagoIncorrectoException, PagoInsuficienteException{ //Con throws indicamos que nuestro método es capaz de lanzar estas excepciones
 
         if(moneda == null){

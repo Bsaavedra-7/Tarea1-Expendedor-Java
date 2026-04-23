@@ -4,7 +4,7 @@ public enum TipoProducto{
     COCA_COLA(1, 1500),
     FANTA(2, 1500),
     SPRITE(3, 1500), //Definimos las constantes
-    SNICKERS(4, 1000),
+    SNICKERS(4, 500),
     SUPER8(5, 500);
 
     private final int numero; //Definimos el atributo numero para saber a que numero corresponde cada producto
@@ -17,7 +17,7 @@ public enum TipoProducto{
 
     public int getNumero(){
         return numero;
-    }
+    } //Getter del numero
 
     public int getPrecio() {
         return precio; //Getter del precio

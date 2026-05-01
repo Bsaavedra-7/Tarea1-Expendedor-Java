@@ -1,20 +1,44 @@
 package Expendedor.deposito;
+
 import java.util.ArrayList;
 
+/**
+ * Clase que representa un depósito genérico.
+ *
+ * @param <T> tipo de objeto que guarda el depósito
+ */
 public class Deposito<T> {
-    private ArrayList<T> array; //Creamos el array genérico
+    /**
+     * Creamos el array genérico
+     */
+    private ArrayList<T> array;
 
-    public Deposito(){  //Constructor del arreglo
+    /**
+     * Constructor del arreglo
+     */
+    public Deposito(){
         this.array = new ArrayList<>();
     }
 
-    public void add(T tipo){ //Método para añadir una vez un objeto al arreglo
+    /**
+     * Método para añadir una vez un objeto al arreglo
+     *
+     * @param tipo objeto que se quiere añadir al arreglo
+     */
+    public void add(T tipo){
         array.add(tipo);
     }
 
-    public T get(){ //Método para retirar el objeto
-        if (array.isEmpty()){return null;} //Podemos aprovechar esto para hacer el throw a la excepción en expendedor
-        else{return array.removeFirst();} //Quita el primer elemento
+    /**
+     * Método para retirar el objeto
+     *
+     * @return objeto retirado del depósito o null si está vacío
+     */
+    public T get(){
+        if (array.isEmpty()){
+            return null;
+        } else {
+            return array.removeFirst();
+        }
     }
-
 }

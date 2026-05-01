@@ -46,7 +46,7 @@ public class Expendedor {
         }
     }
 
-    private void darVuelto(Moneda moneda, TipoProducto tipo){
+    private void darVuelto(Moneda moneda, TipoProducto tipo){ //Método para dar vuelto en caso de que SI se haya podido efectuar la compra, en otro caso se devuelve la misma moneda con la que se intentó pagar
         int vuelto = moneda.getValor() - tipo.getPrecio(); //Obtenemos la cantidad de vuelto a entregar
         for(int i = 0; i < vuelto / 100; i++){ //Ciclo para poder dar el vuelto en monedas de 100
             dVuelto.add(new Moneda100()); //Se añade el vuelto al depósito de monedas
@@ -61,12 +61,14 @@ public class Expendedor {
         }
 
         if(moneda.getValor() < tipo.getPrecio()){
+            dVuelto.add(moneda); //Devolvemos la misma moneda con la que se intentó pagar
             throw new PagoInsuficienteException(); //Lanza esta excepción en caso de que el dinero no alcance
         }
 
         Producto producto = sacarDelDeposito(tipo); //Obtenemos el producto deseado de su respectivo depósito
 
         if (producto == null){
+            dVuelto.add(moneda); //Devolvemos la misma moneda con la que se intentó pagar
             throw new NoHayProductoException(); //Lanza esta excepción en caso de que no quede producto
         }
 

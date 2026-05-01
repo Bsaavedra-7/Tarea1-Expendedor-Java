@@ -1,7 +1,7 @@
 package Expendedor.monedas;
 
 
-public abstract class Moneda{
+public abstract class Moneda implements Comparable<Moneda>{
 
     public Moneda(){
     }
@@ -12,4 +12,9 @@ public abstract class Moneda{
     }
 
     public abstract int getValor();
+
+    @Override //Sobreescribimos pues compareTo es un método que ya existe desde la implementación de la interfaz
+    public int compareTo(Moneda otra){
+        return this.getValor() - otra.getValor(); //Retorna de tal modo que sort pueda entender que moneda vale más que otra
+    }
 }

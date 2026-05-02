@@ -7,9 +7,9 @@ public enum TipoProducto{
     /**
      * Definimos las constantes
      */
-    COCA_COLA(1, 1500),
-    FANTA(2, 1500),
-    SPRITE(3, 1500),
+    COCA_COLA(1, 1000),
+    FANTA(2, 1000),
+    SPRITE(3, 1000),
     SNICKERS(4, 500),
     SUPER8(5, 500);
 

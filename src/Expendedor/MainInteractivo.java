@@ -37,9 +37,9 @@ public class MainInteractivo {
 
             // Menu para seleccionar productos
             System.out.println("\n--- MENU DE PRODUCTOS ---");
-            System.out.println("1. CocaCola ($1500)");
-            System.out.println("2. Fanta ($1500)");
-            System.out.println("3. Sprite ($1500)");
+            System.out.println("1. CocaCola ($1000)");
+            System.out.println("2. Fanta ($1000)");
+            System.out.println("3. Sprite ($1000)");
             System.out.println("4. Snickers ($500)");
             System.out.println("5. Super8 ($500)");
             System.out.println("0. Salir");

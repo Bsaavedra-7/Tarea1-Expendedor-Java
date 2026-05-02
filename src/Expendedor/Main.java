@@ -194,7 +194,7 @@ public class Main {
         monedas.add(new Moneda500());
 
         System.out.println("Antes de ordenar:");
-        for (Moneda m : monedas) {
+        for (Moneda m : monedas) { //Similar a hacer un for m in monedas en python
             /**
              * Mostramos como están ordenadas antes
              */
@@ -207,7 +207,7 @@ public class Main {
         monedas.sort(null);
 
         System.out.println("Después de ordenar:");
-        for (Moneda m : monedas) {
+        for (Moneda m : monedas) { //Similar a hacer un for m in monedas en python
             /**
              * Mostramos como están ordenadas después
              */

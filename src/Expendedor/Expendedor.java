@@ -103,6 +103,10 @@ public class Expendedor {
         }
     }
 
+    public Moneda getVuelto(){
+        return dVuelto.get();
+    }
+
     /**
      * Compra un producto usando una moneda.
      *
